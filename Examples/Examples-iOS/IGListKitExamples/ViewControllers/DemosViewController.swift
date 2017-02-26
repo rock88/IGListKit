@@ -23,6 +23,7 @@ final class DemosViewController: UIViewController, IGListAdapterDataSource {
     let collectionView = IGListCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
 
     let demos: [DemoItem] = [
+        DemoItem(name: "Display Director", controllerClass: DisplayDirectorViewController.self),
         DemoItem(name: "Tail Loading", controllerClass: LoadMoreViewController.self),
         DemoItem(name: "Search Autocomplete", controllerClass: SearchViewController.self),
         DemoItem(name: "Mixed Data", controllerClass: MixedDataViewController.self),

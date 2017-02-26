@@ -68,6 +68,10 @@ final class GridSectionController: IGListSectionController, IGListSectionType {
 
     func didUpdate(to object: Any) {
         self.object = object as? GridItem
+        
+        if let object = object as? DisplayDirectorSource {
+            self.object = object.data as? GridItem
+        }
     }
 
     func didSelectItem(at index: Int) {}

@@ -21,7 +21,7 @@ final class EmbeddedSectionController: IGListSectionController, IGListSectionTyp
 
     override init() {
         super.init()
-        self.inset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
+        self.inset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
 
     func numberOfItems() -> Int {

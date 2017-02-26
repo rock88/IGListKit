@@ -43,6 +43,10 @@ final class HorizontalSectionController: IGListSectionController, IGListSectionT
 
     func didUpdate(to object: Any) {
         number = object as? Int
+        
+        if let object = object as? DisplayDirectorSource {
+            number = object.data as? Int
+        }
     }
 
     func didSelectItem(at index: Int) {}
